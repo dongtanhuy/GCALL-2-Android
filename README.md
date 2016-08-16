@@ -19,7 +19,7 @@ Gcall brings a platform for SMEs and online stores  to support their customer be
   ![alt tag](images/workflow.gif)
 
 ## Project folder
-![alt tag](images/general_folder.png)
+![alt tag](images/general_folder.png)<br />
 ![alt tag](images/detail_folder.png)
 
 ## Build with
