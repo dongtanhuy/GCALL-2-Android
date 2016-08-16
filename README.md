@@ -5,15 +5,15 @@ Gcall brings a platform for SMEs and online stores  to support their customer be
 &nbsp;Pull or download project as zip and use Android studio to build and run
 ## Features
 * Manage hotline by adding or deleting agents<br />
-  ![alt tag](images/manage.png | width=250x100)
+  ![alt tag](images/manage.png)
 * Receive in coming call from clients<br />
-  ![alt tag](images/incomingcall.png =250x100)
+  ![alt tag](images/incomingcall.png)
 * All calls history is shown<br />
-  ![alt tag](images/call_log.png =250x100)
+  ![alt tag](images/call_log.png)
 * Show all co-worker in the same hotlines with you<br />
-  ![alt tag](images/working.png =250x100)
+  ![alt tag](images/working.png)
 * You can accept or reject the invitation to a hotline<br />
-  ![alt tag](images/invitation.png =250x100)
+  ![alt tag](images/invitation.png)
 
 ## Work flow
   ![alt tag](images/workflow.gif)
