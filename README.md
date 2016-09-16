@@ -24,7 +24,7 @@ Gcall brings a platform for SMEs and online stores  to support their customer be
 
 ## Build with
 * Twillio client  android <https://www.twilio.com/docs/api/client/android>
-* Android view badgers <https://github.com/jgilfelt/android-viewbadger>
+* Android view badger <https://github.com/jgilfelt/android-viewbadger>
 * Volley library <https://github.com/mcxiaoke/android-volley>
 * Floating action menu and button <https://github.com/futuresimple/android-floating-action-button>
 * Text drawable <https://github.com/amulyakhare/TextDrawable>
