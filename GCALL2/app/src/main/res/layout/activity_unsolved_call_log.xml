@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotline_spiner"
+        android:layout_below="@id/appBarLayout"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        app:ms_text_color="@color/primary"
+        app:ms_arrow_tint="@color/primary"
+        app:ms_background_color="#bbbdbf"
+        android:padding="5dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="@color/list_view_divider"
+        android:id="@+id/unsolved_listview"
+        android:layout_below="@id/hotline_spiner"></ListView>
+</RelativeLayout>

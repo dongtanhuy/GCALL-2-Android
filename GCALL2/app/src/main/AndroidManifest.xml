@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.gcall.gcall2">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".GcallApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up_acitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TabViewActivity"
+            android:label="@string/title_activity_tab_view"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuyHotlinesActivity"
+            android:label="@string/title_activity_buy_hotlines" />
+        <activity
+            android:name=".HotlineDetail"
+            android:label="@string/title_activity_hotline_detail" />
+        <activity
+            android:name=".SecondLayerSubgroup"
+            android:label="@string/title_activity_second_layer_subgroup" />
+        <activity
+            android:name=".SecondLayerSubgroupDetail"
+            android:label="@string/title_activity_second_layer_subgroup_detail" />
+        <activity
+            android:name=".IncomingCallActivity"
+            android:label="IncommingCall"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.twilio.client.TwilioClientService"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service android:name=".FirebaseService.GCALLFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseService.GCALLFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ManageActivity"
+            android:label="@string/title_activity_manage" />
+        <activity
+            android:name=".AgentProfileActivity"
+            android:label="@string/title_activity_agent_profile" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" />
+        <activity
+            android:name=".Intro"
+            android:label="@string/title_activity_intro" />
+        <activity
+            android:name=".AddCellphoneNumberActivity"
+            android:label="@string/title_activity_add_cellphone_number" />
+        <activity
+            android:name=".VerifyActivity"
+            android:label="@string/title_activity_verify" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_intro" />
+        <activity
+            android:name=".UnsolvedCallLogActivity"
+            android:label="@string/title_activity_unsolved_call_log" />
+        <activity
+            android:name=".UpgradeActivity"
+            android:label="@string/title_activity_upgrade" />
+        <activity
+            android:name=".HotlineInfo"
+            android:label="@string/title_activity_hotline_info"></activity>
+    </application>
+
+</manifest>

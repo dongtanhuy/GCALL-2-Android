@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotline number information"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_below="@id/appBarLayout"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:stretchColumns="0,1"
+        android:padding="10dp"
+        android:id="@+id/table_layout"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Price:"
+                android:textSize="20dp"/>
+            <TextView
+                android:textColor="@color/primary"
+                android:id="@+id/tv_pricing"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Register date:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tv_registeredDate"
+                android:textColor="@color/primary"
+                android:textSize="20dp"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Expiration date:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tv_expiredDate"
+                android:textColor="@color/primary"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Time remain:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tv_timeUsed"
+                android:textColor="@color/primary"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="No. of agents:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tv_noOfAgents"
+                android:textColor="@color/primary"
+                android:textSize="20dp"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_upgrade"
+        android:layout_below="@id/table_layout"
+        android:text="Upgrade this Hotline"
+        android:layout_margin="10dp"
+        android:background="@color/primary"
+        android:textSize="20dp"
+        android:textColor="@color/White"/>
+</RelativeLayout>

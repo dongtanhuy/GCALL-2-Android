@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    tools:context="vn.gcall.gcall2.MoreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_account">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            />
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_profile"
+            android:drawableLeft="@drawable/icon_profile"
+            android:text="  Profile"
+            android:textSize="15dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:background="@color/White"
+            android:textAllCaps="false"
+            android:elevation="6dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_manage"
+        android:layout_below="@id/layout_account">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage hotlines, groups and agents"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            />
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_manage"
+            android:drawableLeft="@drawable/icon_manage"
+            android:text="  Hotlines"
+            android:textSize="15dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="6dp"
+            android:background="@color/White"
+            android:textAllCaps="false"
+            />
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_unsolved"
+            android:drawableLeft="@drawable/icon_calllogs"
+            android:text="  Call logs"
+            android:textSize="15dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="6dp"
+            android:background="@color/White"
+            android:textAllCaps="false"
+            />
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_help"
+            android:drawableLeft="@drawable/icon_help"
+            android:text="  Help"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="6dp"
+            android:textSize="15dp"
+            android:gravity="center_vertical|left"
+            android:background="@color/White"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_below="@id/layout_manage"
+        android:id="@+id/layout_signout">
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signout"
+            android:text="Sign out"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="6dp"
+            android:textColor="@color/Red"
+            android:background="@color/White"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

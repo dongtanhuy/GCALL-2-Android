@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/upgrade_image"
+    android:paddingBottom="40dp"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="68dp"
+        android:textColor="@color/White"
+        android:background="@drawable/effect_btn_startup"
+        android:layout_alignParentBottom="true"
+        android:elevation="4dp"
+        android:id="@+id/btn_startup"/>
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="68dp"
+        android:background="@drawable/effect_btn_premium"
+        android:textColor="@color/White"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_premium"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/effect_btn_close"
+        android:backgroundTint="@color/White"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_close"/>
+</RelativeLayout>

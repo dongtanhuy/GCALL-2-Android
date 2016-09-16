@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1085450620830",
+    "firebase_url": "https://gcall2-c806d.firebaseio.com",
+    "project_id": "gcall2-c806d",
+    "storage_bucket": "gcall2-c806d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085450620830:android:a779b0bdeb50dac1",
+        "android_client_info": {
+          "package_name": "vn.gcall.gcall2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085450620830-fjo6904730iq9u1dqn5cn571104m14gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6dAkqSfNK3yviqA4hfFiq5jzlC468DYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
