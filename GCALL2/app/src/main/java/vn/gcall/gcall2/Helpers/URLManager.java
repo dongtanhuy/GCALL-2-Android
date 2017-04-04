@@ -5,10 +5,8 @@ package vn.gcall.gcall2.Helpers;
  * Manage all API URLs
  */
 public class URLManager {
-    private static final String DOMAIN_NAME="https://call.gcall.vn";
-    //Dev environment
-//    private static final String DOMAIN_NAME="https://dev.gcall.vn";
-
+    private static final String DOMAIN_NAME="YOUR_DOMAIN_";
+    
     private static final String PREFIX_API=DOMAIN_NAME+"/api/";
     private static String SignInAPI=DOMAIN_NAME+"/api/signin";
     private static String SignUpAPI=DOMAIN_NAME+"/api/signup";
